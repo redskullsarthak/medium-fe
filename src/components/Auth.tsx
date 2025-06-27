@@ -46,7 +46,7 @@ export const Auth = ({ type }: { type: "signin" | "signup" }) => {
               ? "Already have an account?"
               : "Don't have an account?"}
             <Link
-              to={type == "signup" ? "/signin" : "/signup"}
+              to={type == "signup" ? "/" : "/signup"}
               className="pl-1 cursor-pointer underline"
             >
               {type == "signup" ? "Login" : "Sign up"}

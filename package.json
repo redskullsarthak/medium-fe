@@ -12,6 +12,8 @@
   "dependencies": {
     "@avinash13/medium2-common": "^1.0.0",
     "@tailwindcss/vite": "^4.1.6",
+    "@tiptap/react": "^2.23.0",
+    "@tiptap/starter-kit": "^2.23.0",
     "axios": "^1.8.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

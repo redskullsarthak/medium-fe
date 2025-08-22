@@ -4,6 +4,8 @@ import { useState } from "react";
 import axios from "axios";
 import { BACKEND_URL } from "../config";
 import { useNavigate } from "react-router-dom";
+
+
 export const Publish = () => {
   interface LocationState {
     name: string;
@@ -25,6 +27,8 @@ export const Publish = () => {
           className=" max-w-3xl min-w-3xl  p-2 border border-gray-300 rounded resize-y min-h-[100px]" onChange={(e)=>{setTitle(e.target.value)}}
         ></textarea>
       </div>
+
+   
 
       <div className="text-xl">
         <textarea

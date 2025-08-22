@@ -29,7 +29,12 @@ export const Auth = ({ type }: { type: "signin" | "signup" }) => {
       }else{
         alert(response.data.msg);
       }
-    } catch {
+    } catch(err:any) {
+        if (err.response) {
+    console.error("Signup failed - backend responded with:", err.response.data);
+  } else {
+    console.error("Signup failed - network or other error:", err.message);
+  }
         alert(`error while signing ${(type=='signin')? "in" : "up"}`)
     }
   }

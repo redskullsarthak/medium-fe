@@ -16,7 +16,7 @@ export const Blog = () => {
 
   const location = useLocation();
   const state = location.state as LocationState | undefined;
-  const name = state?.name || "Avinash";
+  const name = state?.name || "Sarthak";
 
   if (loading)
     return (

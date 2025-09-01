@@ -11,7 +11,7 @@ export const Blogs = () => {
   const { loading, blogs } = useBlogs();
   const location = useLocation();
   const state = location.state as LocationState | undefined;
-  const name_ = state?.name || "Anonymous";
+  const name_ = state?.name || "Sarthak";
 
   interface Blog {
     title: string;
@@ -59,7 +59,7 @@ export const Blogs = () => {
           return (
             <BlogCard
               key={blog.id}
-              name={blog.author.name || "Avinash Pandey"}
+              name={blog.author.name || "Sarthak Singh"}
               title={blog.title}
               content={blog.content}
               published={"23-10-2020"}
